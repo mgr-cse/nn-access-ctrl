@@ -1,4 +1,4 @@
-# DlbacAlpha
+# nn-access-ctrl
 
 `dataset/` directory contains all the datasets related to the DLBAC_alpha experiments.  
 
