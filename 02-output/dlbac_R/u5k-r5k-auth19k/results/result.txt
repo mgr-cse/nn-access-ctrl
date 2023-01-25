@@ -1,0 +1,5 @@
+train data file name:../dataset/synthetic/u5k-r5k-auth19k/train_u5k-r5k-auth19k.sample
+test data file name:../dataset/synthetic/u5k-r5k-auth19k/test_u5k-r5k-auth19k.sample
+Test loss:0.182455
+Test accuracy:0.952969
+TN: 8523, FP: 387, FN: 348, TP: 6370

@@ -31,12 +31,12 @@ batch_size = 16  # trained all networks with batch_size=16
 # format of the dataset
 # <uid rid> <8-13 user-metadata values> <8-13 resource-metadata values> <4 operations>
 # load the train dataset
-raw_train_dataset = loadtxt(trainDataFileName, delimiter=' ', dtype=np.str)
+raw_train_dataset = loadtxt(trainDataFileName, delimiter=' ', dtype=str)
 cols = raw_train_dataset.shape[1]
 train_dataset = raw_train_dataset[:,2:cols] # TO SKIP UID RID
 
 # load the test dataset
-raw_test_dataset = loadtxt(testDataFileName, delimiter=' ', dtype=np.str)
+raw_test_dataset = loadtxt(testDataFileName, delimiter=' ', dtype=str)
 test_dataset = raw_test_dataset[:,2:cols] # TO SKIP UID RID
 
 # columns after removing uid/rid

@@ -1,0 +1,5 @@
+train data file name:../dataset/synthetic/u4k-r6k-auth28k/train_u4k-r6k-auth28k.sample
+test data file name:../dataset/synthetic/u4k-r6k-auth28k/test_u4k-r6k-auth28k.sample
+Test loss:0.445771
+Test accuracy:0.894174
+TN: 10969, FP: 1129, FN: 1305, TP: 9597
