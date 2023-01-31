@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dataset_folders="u4k-r4k-auth11k u4k-r4k-auth21k u4k-r4k-auth22k u4k-r6k-auth28k u4k-r7k-auth20k u5k-r5k-auth12k u5k-r5k-auth19k u6k-r6k-auth32k"
+dataset_folders="u4k-r4k-auth11k u4k-r4k-auth22k u4k-r6k-auth28k u4k-r7k-auth20k u5k-r5k-auth12k u5k-r5k-auth19k u6k-r6k-auth32k"
 echo $dataset_folders to be trained!
 
 cd neural_network_training

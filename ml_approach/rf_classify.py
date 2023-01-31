@@ -129,7 +129,66 @@ y_test_new = [int("".join(str(x) for x in y), 2) for y in y_test]
 #Train the model using the training sets
 clf.fit(x_train, y_train_new)
 
-
 #Predict the response for test dataset
-y_pred = clf.predict(x_test)
-print("Accuracy:",metrics.accuracy_score(y_test_new, y_pred))
+y_pred_new = clf.predict(x_test)
+
+y_preds = [ [int(x) for x in '{0:04b}'.format(y)] for  y in y_pred_new ]
+
+g_tn = 0
+g_fp = 0
+g_fn = 0
+g_tp = 0
+
+# Measure True Positive/ Negative, False Positive/ Negative for each operation, 
+# then combine it to measure actual counts
+# we calculate the FPR, FNR offline
+
+from sklearn.metrics import confusion_matrix
+
+RESULT_PATH = './results'
+#os.makedirs(RESULT_PATH)
+
+result_file=open(RESULT_PATH + '/results.txt', 'w+')
+y_preds = np.array(y_preds)
+print('True Positive/ Negative, False Positive/ Negative Information')
+for i in range(4):
+  tn, fp, fn, tp = confusion_matrix(y_test[:, i:i+1], y_preds[:, i:i+1]).ravel()
+  print('op%d  # tn: %s, fp: %s, fn: %s, tp: %s' % (i+1, tn, fp, fn, tp))
+  g_tn = g_tn + tn
+  g_fp = g_fp + fp
+  g_fn = g_fn + fn
+  g_tp = g_tp + tp
+
+accuracy = (g_tp + g_tn)/(g_tp + g_tn + g_fp + g_fn)
+
+print('Test accuracy:', accuracy)
+result_file.write('Test accuracy:%f\n' % (accuracy))
+print('All operations # tn: %s, fp: %s, fn: %s, tp: %s' % (g_tn, g_fp, g_fn, g_tp))
+result_file.write('TN: %s, FP: %s, FN: %s, TP: %s\n' % (g_tn, g_fp, g_fn, g_tp))
+
+
+# train accuracy stuff
+y_pred_train = clf.predict(x_train)
+y_preds = [ [int(x) for x in '{0:04b}'.format(y)] for  y in y_pred_train ]
+y_preds = np.array(y_preds)
+
+g_tn = 0
+g_fp = 0
+g_fn = 0
+g_tp = 0
+
+for i in range(4):
+  tn, fp, fn, tp = confusion_matrix(y_train[:, i:i+1], y_preds[:, i:i+1]).ravel()
+  print('op%d  # tn: %s, fp: %s, fn: %s, tp: %s' % (i+1, tn, fp, fn, tp))
+  g_tn = g_tn + tn
+  g_fp = g_fp + fp
+  g_fn = g_fn + fn
+  g_tp = g_tp + tp
+
+accuracy = (g_tp + g_tn)/(g_tp + g_tn + g_fp + g_fn)
+
+print('train accuracy:', accuracy)
+result_file.write('Train accuracy:%f\n' % (accuracy))
+
+
+result_file.close()

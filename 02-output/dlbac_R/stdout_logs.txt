@@ -1,0 +1,797 @@
+Epoch 56/60
+549/549 [==============================] - 4s 8ms/step - loss: 0.0455 - binary_accuracy: 0.9990 - val_loss: 0.0845 - val_binary_accuracy: 0.9843 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 57/60
+549/549 [==============================] - 5s 8ms/step - loss: 0.0463 - binary_accuracy: 0.9983 - val_loss: 0.0844 - val_binary_accuracy: 0.9847 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 58/60
+549/549 [==============================] - 4s 8ms/step - loss: 0.0459 - binary_accuracy: 0.9986 - val_loss: 0.0855 - val_binary_accuracy: 0.9841 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 59/60
+549/549 [==============================] - 4s 8ms/step - loss: 0.0464 - binary_accuracy: 0.9981 - val_loss: 0.0849 - val_binary_accuracy: 0.9843 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 60/60
+549/549 [==============================] - 5s 8ms/step - loss: 0.0457 - binary_accuracy: 0.9989 - val_loss: 0.0844 - val_binary_accuracy: 0.9847 - lr: 1.0000e-05
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+69/69 [==============================] - 1s 4ms/step - loss: 0.0844 - binary_accuracy: 0.9847
+Test loss: 0.08443237096071243
+Test accuracy: 0.9847171306610107
+69/69 [==============================] - 0s 3ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 1132, fp: 26, fn: 24, tp: 1010
+op2  # tn: 1233, fp: 19, fn: 7, tp: 933
+op3  # tn: 1120, fp: 22, fn: 13, tp: 1037
+op4  # tn: 1267, fp: 14, fn: 9, tp: 902
+All operations # tn: 4752, fp: 81, fn: 53, tp: 3882
+++++ train complete!: u4k-r4k-auth11k
+++++ results copied: u4k-r4k-auth11k
+Total columns: 27
+metadata to be hide:  7
+ResNet model type: ResNet56
+Traceback (most recent call last):
+  File "/home/mattie/source/repos/nn-access-ctrl/neural_network_training/dlbac_alpha_resnet.py", line 91, in <module>
+    y_train = train_dataset[:,metadata:cols].astype(int)
+ValueError: invalid literal for int() with base 10: ''
+++++ train complete!: u4k-r4k-auth21k
+++++ results copied: u4k-r4k-auth21k
+Total columns: 30
+metadata to be hide:  10
+ResNet model type: ResNet56
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (18067, 16, 111)
+shape of x_test after encoding (4516, 16, 111)
+batch size: 16
+shape of x_train after adding new dimension (18067, 16, 111, 1)
+shape of x_test after adding new dimension (4516, 16, 111, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/30
+1130/1130 [==============================] - 51s 41ms/step - loss: 0.7805 - binary_accuracy: 0.7628 - val_loss: 0.6836 - val_binary_accuracy: 0.7615 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.5724 - binary_accuracy: 0.7975 - val_loss: 0.5382 - val_binary_accuracy: 0.7985 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.5104 - binary_accuracy: 0.8115 - val_loss: 0.5115 - val_binary_accuracy: 0.8125 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.4808 - binary_accuracy: 0.8184 - val_loss: 0.5425 - val_binary_accuracy: 0.8015 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/30
+1130/1130 [==============================] - 46s 40ms/step - loss: 0.4591 - binary_accuracy: 0.8277 - val_loss: 0.4911 - val_binary_accuracy: 0.8158 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.4422 - binary_accuracy: 0.8356 - val_loss: 0.4517 - val_binary_accuracy: 0.8286 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.4275 - binary_accuracy: 0.8405 - val_loss: 0.5162 - val_binary_accuracy: 0.8105 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/30
+1130/1130 [==============================] - 46s 41ms/step - loss: 0.4140 - binary_accuracy: 0.8480 - val_loss: 0.4150 - val_binary_accuracy: 0.8491 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.4033 - binary_accuracy: 0.8505 - val_loss: 0.4784 - val_binary_accuracy: 0.8153 - lr: 0.0010
+Learning rate:  0.001
+Epoch 10/30
+1130/1130 [==============================] - 46s 41ms/step - loss: 0.3980 - binary_accuracy: 0.8544 - val_loss: 0.4792 - val_binary_accuracy: 0.8123 - lr: 0.0010
+Learning rate:  0.0001
+Epoch 11/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.3426 - binary_accuracy: 0.8807 - val_loss: 0.3594 - val_binary_accuracy: 0.8679 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 12/30
+1130/1130 [==============================] - 45s 40ms/step - loss: 0.3198 - binary_accuracy: 0.8891 - val_loss: 0.3506 - val_binary_accuracy: 0.8722 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 13/30
+1130/1130 [==============================] - 46s 40ms/step - loss: 0.3046 - binary_accuracy: 0.8937 - val_loss: 0.3516 - val_binary_accuracy: 0.8658 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 14/30
+1130/1130 [==============================] - 46s 40ms/step - loss: 0.2926 - binary_accuracy: 0.8981 - val_loss: 0.3567 - val_binary_accuracy: 0.8676 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 15/30
+1130/1130 [==============================] - 48s 43ms/step - loss: 0.2816 - binary_accuracy: 0.9038 - val_loss: 0.3481 - val_binary_accuracy: 0.8693 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 16/30
+1130/1130 [==============================] - 48s 42ms/step - loss: 0.2719 - binary_accuracy: 0.9075 - val_loss: 0.3558 - val_binary_accuracy: 0.8660 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 17/30
+1130/1130 [==============================] - 50s 44ms/step - loss: 0.2617 - binary_accuracy: 0.9106 - val_loss: 0.3604 - val_binary_accuracy: 0.8669 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 18/30
+1130/1130 [==============================] - 49s 43ms/step - loss: 0.2552 - binary_accuracy: 0.9132 - val_loss: 0.3655 - val_binary_accuracy: 0.8671 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 19/30
+1130/1130 [==============================] - 48s 43ms/step - loss: 0.2448 - binary_accuracy: 0.9178 - val_loss: 0.3721 - val_binary_accuracy: 0.8590 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 20/30
+1130/1130 [==============================] - 50s 44ms/step - loss: 0.2378 - binary_accuracy: 0.9195 - val_loss: 0.3793 - val_binary_accuracy: 0.8645 - lr: 3.1623e-05
+Learning rate:  1e-05
+Epoch 21/30
+1130/1130 [==============================] - 49s 43ms/step - loss: 0.2127 - binary_accuracy: 0.9322 - val_loss: 0.3845 - val_binary_accuracy: 0.8611 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 22/30
+1130/1130 [==============================] - 49s 44ms/step - loss: 0.2065 - binary_accuracy: 0.9344 - val_loss: 0.3977 - val_binary_accuracy: 0.8614 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 23/30
+1130/1130 [==============================] - 49s 43ms/step - loss: 0.2025 - binary_accuracy: 0.9352 - val_loss: 0.4103 - val_binary_accuracy: 0.8596 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 24/30
+1130/1130 [==============================] - 49s 43ms/step - loss: 0.2002 - binary_accuracy: 0.9355 - val_loss: 0.4094 - val_binary_accuracy: 0.8573 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 25/30
+1130/1130 [==============================] - 50s 44ms/step - loss: 0.1989 - binary_accuracy: 0.9362 - val_loss: 0.4113 - val_binary_accuracy: 0.8588 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 26/30
+1130/1130 [==============================] - 49s 43ms/step - loss: 0.1959 - binary_accuracy: 0.9387 - val_loss: 0.4200 - val_binary_accuracy: 0.8558 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 27/30
+1130/1130 [==============================] - 53s 47ms/step - loss: 0.1949 - binary_accuracy: 0.9377 - val_loss: 0.4226 - val_binary_accuracy: 0.8587 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 28/30
+1130/1130 [==============================] - 53s 47ms/step - loss: 0.1935 - binary_accuracy: 0.9385 - val_loss: 0.4270 - val_binary_accuracy: 0.8562 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 29/30
+1130/1130 [==============================] - 52s 46ms/step - loss: 0.1908 - binary_accuracy: 0.9402 - val_loss: 0.4253 - val_binary_accuracy: 0.8558 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 30/30
+1130/1130 [==============================] - 50s 44ms/step - loss: 0.1903 - binary_accuracy: 0.9398 - val_loss: 0.4357 - val_binary_accuracy: 0.8545 - lr: 3.1623e-06
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+142/142 [==============================] - 3s 20ms/step - loss: 0.4357 - binary_accuracy: 0.8545
+Test loss: 0.4357265532016754
+Test accuracy: 0.8545172810554504
+142/142 [==============================] - 3s 18ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 1377, fp: 266, fn: 220, tp: 2653
+op2  # tn: 1828, fp: 377, fn: 437, tp: 1874
+op3  # tn: 1391, fp: 416, fn: 550, tp: 2159
+op4  # tn: 1710, fp: 141, fn: 221, tp: 2444
+All operations # tn: 6306, fp: 1200, fn: 1428, tp: 9130
+++++ train complete!: u4k-r4k-auth22k
+++++ results copied: u4k-r4k-auth22k
+Total columns: 30
+metadata to be hide:  10
+ResNet model type: ResNet56
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (23001, 16, 138)
+shape of x_test after encoding (5750, 16, 138)
+batch size: 16
+shape of x_train after adding new dimension (23001, 16, 138, 1)
+shape of x_test after adding new dimension (5750, 16, 138, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/30
+1438/1438 [==============================] - 85s 55ms/step - loss: 0.8480 - binary_accuracy: 0.7191 - val_loss: 1.2420 - val_binary_accuracy: 0.6289 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.6426 - binary_accuracy: 0.7796 - val_loss: 1.0032 - val_binary_accuracy: 0.6850 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.5675 - binary_accuracy: 0.8060 - val_loss: 0.6488 - val_binary_accuracy: 0.7532 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.5254 - binary_accuracy: 0.8239 - val_loss: 0.5389 - val_binary_accuracy: 0.8114 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.4940 - binary_accuracy: 0.8364 - val_loss: 0.8692 - val_binary_accuracy: 0.7011 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/30
+1438/1438 [==============================] - 74s 52ms/step - loss: 0.4727 - binary_accuracy: 0.8456 - val_loss: 0.5284 - val_binary_accuracy: 0.8097 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/30
+1438/1438 [==============================] - 77s 53ms/step - loss: 0.4529 - binary_accuracy: 0.8549 - val_loss: 0.6671 - val_binary_accuracy: 0.7505 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.4372 - binary_accuracy: 0.8639 - val_loss: 0.4786 - val_binary_accuracy: 0.8350 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.4237 - binary_accuracy: 0.8698 - val_loss: 0.5475 - val_binary_accuracy: 0.8293 - lr: 0.0010
+Learning rate:  0.001
+Epoch 10/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.4156 - binary_accuracy: 0.8748 - val_loss: 0.4739 - val_binary_accuracy: 0.8438 - lr: 0.0010
+Learning rate:  0.0001
+Epoch 11/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.3360 - binary_accuracy: 0.9119 - val_loss: 0.3717 - val_binary_accuracy: 0.8913 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 12/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2987 - binary_accuracy: 0.9246 - val_loss: 0.3580 - val_binary_accuracy: 0.8980 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 13/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2751 - binary_accuracy: 0.9348 - val_loss: 0.3599 - val_binary_accuracy: 0.8957 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 14/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.2533 - binary_accuracy: 0.9428 - val_loss: 0.3895 - val_binary_accuracy: 0.8899 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 15/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2356 - binary_accuracy: 0.9492 - val_loss: 0.3953 - val_binary_accuracy: 0.8910 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 16/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2220 - binary_accuracy: 0.9542 - val_loss: 0.4090 - val_binary_accuracy: 0.8872 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 17/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2097 - binary_accuracy: 0.9587 - val_loss: 0.3971 - val_binary_accuracy: 0.8928 - lr: 3.1623e-05
+Learning rate:  0.0001
+Epoch 18/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.2005 - binary_accuracy: 0.9614 - val_loss: 0.4035 - val_binary_accuracy: 0.8931 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 19/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1925 - binary_accuracy: 0.9637 - val_loss: 0.4185 - val_binary_accuracy: 0.8906 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 20/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.1859 - binary_accuracy: 0.9657 - val_loss: 0.4247 - val_binary_accuracy: 0.8919 - lr: 1.0000e-04
+Learning rate:  1e-05
+Epoch 21/30
+1438/1438 [==============================] - 77s 53ms/step - loss: 0.1640 - binary_accuracy: 0.9746 - val_loss: 0.4117 - val_binary_accuracy: 0.8943 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 22/30
+1438/1438 [==============================] - 77s 53ms/step - loss: 0.1567 - binary_accuracy: 0.9762 - val_loss: 0.4172 - val_binary_accuracy: 0.8945 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 23/30
+1438/1438 [==============================] - 78s 54ms/step - loss: 0.1547 - binary_accuracy: 0.9761 - val_loss: 0.4238 - val_binary_accuracy: 0.8944 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 24/30
+1438/1438 [==============================] - 78s 54ms/step - loss: 0.1528 - binary_accuracy: 0.9762 - val_loss: 0.4289 - val_binary_accuracy: 0.8937 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 25/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1509 - binary_accuracy: 0.9767 - val_loss: 0.4334 - val_binary_accuracy: 0.8935 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 26/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1492 - binary_accuracy: 0.9769 - val_loss: 0.4369 - val_binary_accuracy: 0.8936 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 27/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1485 - binary_accuracy: 0.9774 - val_loss: 0.4378 - val_binary_accuracy: 0.8927 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 28/30
+1438/1438 [==============================] - 76s 53ms/step - loss: 0.1471 - binary_accuracy: 0.9768 - val_loss: 0.4427 - val_binary_accuracy: 0.8926 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 29/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1454 - binary_accuracy: 0.9781 - val_loss: 0.4414 - val_binary_accuracy: 0.8927 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 30/30
+1438/1438 [==============================] - 75s 52ms/step - loss: 0.1454 - binary_accuracy: 0.9774 - val_loss: 0.4458 - val_binary_accuracy: 0.8942 - lr: 1.0000e-05
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+180/180 [==============================] - 5s 25ms/step - loss: 0.4458 - binary_accuracy: 0.8942
+Test loss: 0.4457707703113556
+Test accuracy: 0.8941739201545715
+180/180 [==============================] - 5s 22ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 3043, fp: 116, fn: 157, tp: 2434
+op2  # tn: 2232, fp: 331, fn: 334, tp: 2853
+op3  # tn: 2458, fp: 318, fn: 364, tp: 2610
+op4  # tn: 3236, fp: 364, fn: 450, tp: 1700
+All operations # tn: 10969, fp: 1129, fn: 1305, tp: 9597
+++++ train complete!: u4k-r6k-auth28k
+++++ results copied: u4k-r6k-auth28k
+Total columns: 26
+metadata to be hide:  6
+ResNet model type: ResNet56
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (16027, 16, 133)
+shape of x_test after encoding (4006, 16, 133)
+batch size: 16
+shape of x_train after adding new dimension (16027, 16, 133, 1)
+shape of x_test after adding new dimension (4006, 16, 133, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/30
+1002/1002 [==============================] - 59s 53ms/step - loss: 0.7383 - binary_accuracy: 0.8148 - val_loss: 0.9053 - val_binary_accuracy: 0.7537 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/30
+1002/1002 [==============================] - 51s 51ms/step - loss: 0.4832 - binary_accuracy: 0.8995 - val_loss: 0.4952 - val_binary_accuracy: 0.8772 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/30
+1002/1002 [==============================] - 51s 51ms/step - loss: 0.3979 - binary_accuracy: 0.9165 - val_loss: 0.4492 - val_binary_accuracy: 0.8930 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/30
+1002/1002 [==============================] - 51s 51ms/step - loss: 0.3470 - binary_accuracy: 0.9234 - val_loss: 0.9341 - val_binary_accuracy: 0.7157 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/30
+1002/1002 [==============================] - 51s 51ms/step - loss: 0.3208 - binary_accuracy: 0.9264 - val_loss: 0.3020 - val_binary_accuracy: 0.9319 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.2977 - binary_accuracy: 0.9289 - val_loss: 0.3121 - val_binary_accuracy: 0.9197 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.2778 - binary_accuracy: 0.9326 - val_loss: 0.4399 - val_binary_accuracy: 0.8685 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.2653 - binary_accuracy: 0.9349 - val_loss: 0.3819 - val_binary_accuracy: 0.8955 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.2575 - binary_accuracy: 0.9360 - val_loss: 0.2666 - val_binary_accuracy: 0.9307 - lr: 0.0010
+Learning rate:  0.001
+Epoch 10/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.2417 - binary_accuracy: 0.9378 - val_loss: 0.2459 - val_binary_accuracy: 0.9312 - lr: 0.0010
+Learning rate:  0.0001
+Epoch 11/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1923 - binary_accuracy: 0.9526 - val_loss: 0.2000 - val_binary_accuracy: 0.9412 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 12/30
+1002/1002 [==============================] - 51s 50ms/step - loss: 0.1756 - binary_accuracy: 0.9552 - val_loss: 0.1947 - val_binary_accuracy: 0.9396 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 13/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1652 - binary_accuracy: 0.9565 - val_loss: 0.1891 - val_binary_accuracy: 0.9446 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 14/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1575 - binary_accuracy: 0.9577 - val_loss: 0.1882 - val_binary_accuracy: 0.9414 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 15/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1501 - binary_accuracy: 0.9589 - val_loss: 0.1822 - val_binary_accuracy: 0.9371 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 16/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1437 - binary_accuracy: 0.9600 - val_loss: 0.1801 - val_binary_accuracy: 0.9383 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 17/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1387 - binary_accuracy: 0.9605 - val_loss: 0.1789 - val_binary_accuracy: 0.9387 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 18/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1345 - binary_accuracy: 0.9608 - val_loss: 0.1747 - val_binary_accuracy: 0.9348 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 19/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1308 - binary_accuracy: 0.9611 - val_loss: 0.1740 - val_binary_accuracy: 0.9368 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 20/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1267 - binary_accuracy: 0.9623 - val_loss: 0.1796 - val_binary_accuracy: 0.9337 - lr: 1.0000e-04
+Learning rate:  1e-05
+Epoch 21/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1196 - binary_accuracy: 0.9648 - val_loss: 0.1729 - val_binary_accuracy: 0.9333 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 22/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1174 - binary_accuracy: 0.9655 - val_loss: 0.1732 - val_binary_accuracy: 0.9317 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 23/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1164 - binary_accuracy: 0.9670 - val_loss: 0.1736 - val_binary_accuracy: 0.9316 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 24/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1154 - binary_accuracy: 0.9660 - val_loss: 0.1772 - val_binary_accuracy: 0.9296 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 25/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1149 - binary_accuracy: 0.9659 - val_loss: 0.1761 - val_binary_accuracy: 0.9290 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 26/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1141 - binary_accuracy: 0.9664 - val_loss: 0.1777 - val_binary_accuracy: 0.9293 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 27/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1137 - binary_accuracy: 0.9661 - val_loss: 0.1786 - val_binary_accuracy: 0.9286 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 28/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1128 - binary_accuracy: 0.9667 - val_loss: 0.1805 - val_binary_accuracy: 0.9277 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 29/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1130 - binary_accuracy: 0.9665 - val_loss: 0.1787 - val_binary_accuracy: 0.9283 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 30/30
+1002/1002 [==============================] - 50s 50ms/step - loss: 0.1114 - binary_accuracy: 0.9676 - val_loss: 0.1827 - val_binary_accuracy: 0.9274 - lr: 1.0000e-05
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+126/126 [==============================] - 3s 23ms/step - loss: 0.1827 - binary_accuracy: 0.9274
+Test loss: 0.18268488347530365
+Test accuracy: 0.9273589849472046
+126/126 [==============================] - 3s 21ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 1734, fp: 15, fn: 25, tp: 2232
+op2  # tn: 2474, fp: 199, fn: 129, tp: 1204
+op3  # tn: 1937, fp: 185, fn: 218, tp: 1666
+op4  # tn: 1748, fp: 199, fn: 194, tp: 1865
+All operations # tn: 7893, fp: 598, fn: 566, tp: 6967
+++++ train complete!: u4k-r7k-auth20k
+++++ results copied: u4k-r7k-auth20k
+Total columns: 20
+metadata to be hide:  0
+ResNet model type: ResNet8
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (10152, 16, 138)
+shape of x_test after encoding (2538, 16, 138)
+batch size: 16
+shape of x_train after adding new dimension (10152, 16, 138, 1)
+shape of x_test after adding new dimension (2538, 16, 138, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/60
+635/635 [==============================] - 9s 10ms/step - loss: 0.5526 - binary_accuracy: 0.7654 - val_loss: 0.8085 - val_binary_accuracy: 0.6610 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.3184 - binary_accuracy: 0.9040 - val_loss: 0.5377 - val_binary_accuracy: 0.8276 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.2411 - binary_accuracy: 0.9320 - val_loss: 0.5095 - val_binary_accuracy: 0.7870 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.2024 - binary_accuracy: 0.9488 - val_loss: 0.3947 - val_binary_accuracy: 0.8522 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1817 - binary_accuracy: 0.9557 - val_loss: 0.4545 - val_binary_accuracy: 0.8398 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1671 - binary_accuracy: 0.9605 - val_loss: 0.5256 - val_binary_accuracy: 0.8366 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1565 - binary_accuracy: 0.9651 - val_loss: 0.3958 - val_binary_accuracy: 0.8612 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1476 - binary_accuracy: 0.9677 - val_loss: 0.9201 - val_binary_accuracy: 0.7507 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1443 - binary_accuracy: 0.9689 - val_loss: 0.5229 - val_binary_accuracy: 0.8290 - lr: 3.1623e-04
+Learning rate:  0.001
+Epoch 10/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1349 - binary_accuracy: 0.9722 - val_loss: 0.1696 - val_binary_accuracy: 0.9562 - lr: 0.0010
+Learning rate:  0.001
+Epoch 11/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1307 - binary_accuracy: 0.9731 - val_loss: 0.2670 - val_binary_accuracy: 0.9162 - lr: 0.0010
+Learning rate:  0.001
+Epoch 12/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1269 - binary_accuracy: 0.9745 - val_loss: 0.2658 - val_binary_accuracy: 0.9244 - lr: 0.0010
+Learning rate:  0.001
+Epoch 13/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1234 - binary_accuracy: 0.9759 - val_loss: 0.2201 - val_binary_accuracy: 0.9342 - lr: 0.0010
+Learning rate:  0.001
+Epoch 14/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1183 - binary_accuracy: 0.9779 - val_loss: 0.1826 - val_binary_accuracy: 0.9508 - lr: 0.0010
+Learning rate:  0.001
+Epoch 15/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1152 - binary_accuracy: 0.9791 - val_loss: 1.8953 - val_binary_accuracy: 0.6004 - lr: 3.1623e-04
+Learning rate:  0.001
+Epoch 16/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1179 - binary_accuracy: 0.9773 - val_loss: 0.4975 - val_binary_accuracy: 0.8414 - lr: 0.0010
+Learning rate:  0.001
+Epoch 17/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1102 - binary_accuracy: 0.9798 - val_loss: 0.3973 - val_binary_accuracy: 0.8769 - lr: 0.0010
+Learning rate:  0.001
+Epoch 18/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1109 - binary_accuracy: 0.9797 - val_loss: 0.2570 - val_binary_accuracy: 0.9242 - lr: 0.0010
+Learning rate:  0.001
+Epoch 19/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1081 - binary_accuracy: 0.9809 - val_loss: 0.1822 - val_binary_accuracy: 0.9513 - lr: 0.0010
+Learning rate:  0.001
+Epoch 20/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.1031 - binary_accuracy: 0.9830 - val_loss: 0.2317 - val_binary_accuracy: 0.9351 - lr: 3.1623e-04
+Learning rate:  0.0001
+Epoch 21/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0798 - binary_accuracy: 0.9923 - val_loss: 0.0942 - val_binary_accuracy: 0.9855 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 22/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0709 - binary_accuracy: 0.9955 - val_loss: 0.0909 - val_binary_accuracy: 0.9859 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 23/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0672 - binary_accuracy: 0.9966 - val_loss: 0.0904 - val_binary_accuracy: 0.9884 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 24/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0639 - binary_accuracy: 0.9977 - val_loss: 0.0867 - val_binary_accuracy: 0.9885 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 25/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0629 - binary_accuracy: 0.9975 - val_loss: 0.0858 - val_binary_accuracy: 0.9880 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 26/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0605 - binary_accuracy: 0.9984 - val_loss: 0.0859 - val_binary_accuracy: 0.9876 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 27/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0601 - binary_accuracy: 0.9978 - val_loss: 0.0888 - val_binary_accuracy: 0.9865 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 28/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0580 - binary_accuracy: 0.9983 - val_loss: 0.0864 - val_binary_accuracy: 0.9863 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 29/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0571 - binary_accuracy: 0.9984 - val_loss: 0.0823 - val_binary_accuracy: 0.9885 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 30/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0551 - binary_accuracy: 0.9986 - val_loss: 0.0784 - val_binary_accuracy: 0.9886 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 31/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0540 - binary_accuracy: 0.9989 - val_loss: 0.0810 - val_binary_accuracy: 0.9875 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 32/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0529 - binary_accuracy: 0.9989 - val_loss: 0.0798 - val_binary_accuracy: 0.9877 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 33/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0521 - binary_accuracy: 0.9987 - val_loss: 0.0782 - val_binary_accuracy: 0.9876 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 34/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0509 - binary_accuracy: 0.9990 - val_loss: 0.1056 - val_binary_accuracy: 0.9766 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 35/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0503 - binary_accuracy: 0.9991 - val_loss: 0.0813 - val_binary_accuracy: 0.9861 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 36/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0486 - binary_accuracy: 0.9994 - val_loss: 0.0930 - val_binary_accuracy: 0.9826 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 37/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0482 - binary_accuracy: 0.9992 - val_loss: 0.0734 - val_binary_accuracy: 0.9884 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 38/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0472 - binary_accuracy: 0.9993 - val_loss: 0.0791 - val_binary_accuracy: 0.9868 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 39/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0467 - binary_accuracy: 0.9992 - val_loss: 0.0754 - val_binary_accuracy: 0.9882 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 40/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0456 - binary_accuracy: 0.9993 - val_loss: 0.0757 - val_binary_accuracy: 0.9876 - lr: 1.0000e-04
+Learning rate:  1e-05
+Epoch 41/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0442 - binary_accuracy: 0.9997 - val_loss: 0.0717 - val_binary_accuracy: 0.9886 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 42/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0440 - binary_accuracy: 0.9996 - val_loss: 0.0706 - val_binary_accuracy: 0.9891 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 43/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0437 - binary_accuracy: 0.9997 - val_loss: 0.0713 - val_binary_accuracy: 0.9889 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 44/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0436 - binary_accuracy: 0.9996 - val_loss: 0.0708 - val_binary_accuracy: 0.9889 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 45/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0434 - binary_accuracy: 0.9997 - val_loss: 0.0708 - val_binary_accuracy: 0.9883 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 46/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0432 - binary_accuracy: 0.9997 - val_loss: 0.0699 - val_binary_accuracy: 0.9888 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 47/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0429 - binary_accuracy: 0.9999 - val_loss: 0.0706 - val_binary_accuracy: 0.9883 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 48/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0430 - binary_accuracy: 0.9997 - val_loss: 0.0698 - val_binary_accuracy: 0.9890 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 49/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0427 - binary_accuracy: 0.9998 - val_loss: 0.0710 - val_binary_accuracy: 0.9884 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 50/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0424 - binary_accuracy: 0.9999 - val_loss: 0.0686 - val_binary_accuracy: 0.9893 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 51/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0426 - binary_accuracy: 0.9996 - val_loss: 0.0692 - val_binary_accuracy: 0.9892 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 52/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0421 - binary_accuracy: 0.9998 - val_loss: 0.0684 - val_binary_accuracy: 0.9895 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 53/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0422 - binary_accuracy: 0.9999 - val_loss: 0.0693 - val_binary_accuracy: 0.9891 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 54/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0419 - binary_accuracy: 0.9999 - val_loss: 0.0685 - val_binary_accuracy: 0.9890 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 55/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0420 - binary_accuracy: 0.9998 - val_loss: 0.0695 - val_binary_accuracy: 0.9891 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 56/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0422 - binary_accuracy: 0.9996 - val_loss: 0.0683 - val_binary_accuracy: 0.9896 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 57/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0419 - binary_accuracy: 0.9998 - val_loss: 0.0685 - val_binary_accuracy: 0.9892 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 58/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0415 - binary_accuracy: 0.9999 - val_loss: 0.0687 - val_binary_accuracy: 0.9894 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 59/60
+635/635 [==============================] - 6s 9ms/step - loss: 0.0416 - binary_accuracy: 0.9998 - val_loss: 0.0688 - val_binary_accuracy: 0.9888 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 60/60
+635/635 [==============================] - 6s 10ms/step - loss: 0.0411 - binary_accuracy: 1.0000 - val_loss: 0.0691 - val_binary_accuracy: 0.9892 - lr: 1.0000e-05
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+80/80 [==============================] - 1s 4ms/step - loss: 0.0691 - binary_accuracy: 0.9892
+Test loss: 0.06911309063434601
+Test accuracy: 0.9891647100448608
+80/80 [==============================] - 0s 4ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 1289, fp: 20, fn: 3, tp: 1226
+op2  # tn: 1295, fp: 17, fn: 1, tp: 1225
+op3  # tn: 1340, fp: 17, fn: 19, tp: 1162
+op4  # tn: 1417, fp: 20, fn: 13, tp: 1088
+All operations # tn: 5341, fp: 74, fn: 36, tp: 4701
+++++ train complete!: u5k-r5k-auth12k
+++++ results copied: u5k-r5k-auth12k
+Total columns: 24
+metadata to be hide:  4
+ResNet model type: ResNet56
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (15628, 16, 135)
+shape of x_test after encoding (3907, 16, 135)
+batch size: 16
+shape of x_train after adding new dimension (15628, 16, 135, 1)
+shape of x_test after adding new dimension (3907, 16, 135, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/30
+977/977 [==============================] - 56s 52ms/step - loss: 0.7004 - binary_accuracy: 0.8338 - val_loss: 0.5331 - val_binary_accuracy: 0.8856 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.4619 - binary_accuracy: 0.9041 - val_loss: 0.6350 - val_binary_accuracy: 0.8151 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.3726 - binary_accuracy: 0.9219 - val_loss: 0.4314 - val_binary_accuracy: 0.8868 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.3255 - binary_accuracy: 0.9316 - val_loss: 0.4384 - val_binary_accuracy: 0.8684 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.2939 - binary_accuracy: 0.9371 - val_loss: 0.3670 - val_binary_accuracy: 0.8967 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.2674 - binary_accuracy: 0.9422 - val_loss: 0.4550 - val_binary_accuracy: 0.8853 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.2543 - binary_accuracy: 0.9442 - val_loss: 0.4180 - val_binary_accuracy: 0.8816 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.2394 - binary_accuracy: 0.9476 - val_loss: 0.3334 - val_binary_accuracy: 0.9114 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.2288 - binary_accuracy: 0.9493 - val_loss: 0.3273 - val_binary_accuracy: 0.9054 - lr: 0.0010
+Learning rate:  0.001
+Epoch 10/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.2161 - binary_accuracy: 0.9514 - val_loss: 0.2779 - val_binary_accuracy: 0.9306 - lr: 0.0010
+Learning rate:  0.0001
+Epoch 11/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1725 - binary_accuracy: 0.9663 - val_loss: 0.1846 - val_binary_accuracy: 0.9589 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 12/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1539 - binary_accuracy: 0.9694 - val_loss: 0.1773 - val_binary_accuracy: 0.9575 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 13/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1447 - binary_accuracy: 0.9710 - val_loss: 0.1743 - val_binary_accuracy: 0.9571 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 14/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.1354 - binary_accuracy: 0.9722 - val_loss: 0.1714 - val_binary_accuracy: 0.9587 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 15/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1293 - binary_accuracy: 0.9732 - val_loss: 0.1685 - val_binary_accuracy: 0.9564 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 16/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1247 - binary_accuracy: 0.9735 - val_loss: 0.1683 - val_binary_accuracy: 0.9589 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 17/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.1195 - binary_accuracy: 0.9738 - val_loss: 0.1758 - val_binary_accuracy: 0.9571 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 18/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1156 - binary_accuracy: 0.9750 - val_loss: 0.1664 - val_binary_accuracy: 0.9547 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 19/30
+977/977 [==============================] - 49s 51ms/step - loss: 0.1115 - binary_accuracy: 0.9763 - val_loss: 0.1696 - val_binary_accuracy: 0.9555 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 20/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.1091 - binary_accuracy: 0.9762 - val_loss: 0.1924 - val_binary_accuracy: 0.9574 - lr: 1.0000e-04
+Learning rate:  1e-05
+Epoch 21/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.0990 - binary_accuracy: 0.9801 - val_loss: 0.1699 - val_binary_accuracy: 0.9543 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 22/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.0977 - binary_accuracy: 0.9795 - val_loss: 0.1718 - val_binary_accuracy: 0.9539 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 23/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.0971 - binary_accuracy: 0.9800 - val_loss: 0.1746 - val_binary_accuracy: 0.9544 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 24/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.0957 - binary_accuracy: 0.9800 - val_loss: 0.1741 - val_binary_accuracy: 0.9534 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 25/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.0945 - binary_accuracy: 0.9803 - val_loss: 0.1781 - val_binary_accuracy: 0.9532 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 26/30
+977/977 [==============================] - 50s 51ms/step - loss: 0.0939 - binary_accuracy: 0.9804 - val_loss: 0.1780 - val_binary_accuracy: 0.9540 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 27/30
+977/977 [==============================] - 51s 53ms/step - loss: 0.0931 - binary_accuracy: 0.9804 - val_loss: 0.1793 - val_binary_accuracy: 0.9538 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 28/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.0931 - binary_accuracy: 0.9799 - val_loss: 0.1806 - val_binary_accuracy: 0.9537 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 29/30
+977/977 [==============================] - 49s 50ms/step - loss: 0.0918 - binary_accuracy: 0.9814 - val_loss: 0.1820 - val_binary_accuracy: 0.9530 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 30/30
+977/977 [==============================] - 50s 52ms/step - loss: 0.0920 - binary_accuracy: 0.9806 - val_loss: 0.1825 - val_binary_accuracy: 0.9530 - lr: 1.0000e-05
+Saving trained dlbac_alpha to results/dlbac_alpha.hdf5.
+123/123 [==============================] - 3s 23ms/step - loss: 0.1825 - binary_accuracy: 0.9530
+Test loss: 0.18245479464530945
+Test accuracy: 0.9529690146446228
+123/123 [==============================] - 3s 22ms/step
+True Positive/ Negative, False Positive/ Negative Information
+op1  # tn: 1824, fp: 49, fn: 47, tp: 1987
+op2  # tn: 1964, fp: 127, fn: 118, tp: 1698
+op3  # tn: 2503, fp: 130, fn: 149, tp: 1125
+op4  # tn: 2232, fp: 81, fn: 34, tp: 1560
+All operations # tn: 8523, fp: 387, fn: 348, tp: 6370
+++++ train complete!: u5k-r5k-auth19k
+++++ results copied: u5k-r5k-auth19k
+Total columns: 24
+metadata to be hide:  4
+ResNet model type: ResNet56
+User/resource metadata after meta data removal: 16
+User/resource metadata after meta data removal: 16
+shape of x_train after encoding (26046, 16, 137)
+shape of x_test after encoding (6511, 16, 137)
+batch size: 16
+shape of x_train after adding new dimension (26046, 16, 137, 1)
+shape of x_test after adding new dimension (6511, 16, 137, 1)
+Learning rate:  0.001
+Learning rate:  0.001
+Epoch 1/30
+1628/1628 [==============================] - 90s 52ms/step - loss: 0.7078 - binary_accuracy: 0.8248 - val_loss: 0.8462 - val_binary_accuracy: 0.7899 - lr: 0.0010
+Learning rate:  0.001
+Epoch 2/30
+1628/1628 [==============================] - 84s 51ms/step - loss: 0.4618 - binary_accuracy: 0.8930 - val_loss: 0.5082 - val_binary_accuracy: 0.8544 - lr: 0.0010
+Learning rate:  0.001
+Epoch 3/30
+1628/1628 [==============================] - 84s 51ms/step - loss: 0.3665 - binary_accuracy: 0.9190 - val_loss: 0.3908 - val_binary_accuracy: 0.8989 - lr: 0.0010
+Learning rate:  0.001
+Epoch 4/30
+1628/1628 [==============================] - 85s 52ms/step - loss: 0.3172 - binary_accuracy: 0.9315 - val_loss: 0.3735 - val_binary_accuracy: 0.8985 - lr: 0.0010
+Learning rate:  0.001
+Epoch 5/30
+1628/1628 [==============================] - 84s 51ms/step - loss: 0.2851 - binary_accuracy: 0.9388 - val_loss: 0.2660 - val_binary_accuracy: 0.9491 - lr: 0.0010
+Learning rate:  0.001
+Epoch 6/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.2612 - binary_accuracy: 0.9441 - val_loss: 0.4238 - val_binary_accuracy: 0.8730 - lr: 0.0010
+Learning rate:  0.001
+Epoch 7/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.2451 - binary_accuracy: 0.9463 - val_loss: 0.2648 - val_binary_accuracy: 0.9414 - lr: 0.0010
+Learning rate:  0.001
+Epoch 8/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.2314 - binary_accuracy: 0.9487 - val_loss: 0.3263 - val_binary_accuracy: 0.9053 - lr: 0.0010
+Learning rate:  0.001
+Epoch 9/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.2194 - binary_accuracy: 0.9514 - val_loss: 0.2487 - val_binary_accuracy: 0.9404 - lr: 0.0010
+Learning rate:  0.001
+Epoch 10/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.2085 - binary_accuracy: 0.9527 - val_loss: 0.2273 - val_binary_accuracy: 0.9462 - lr: 0.0010
+Learning rate:  0.0001
+Epoch 11/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1613 - binary_accuracy: 0.9681 - val_loss: 0.1669 - val_binary_accuracy: 0.9638 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 12/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1446 - binary_accuracy: 0.9718 - val_loss: 0.1590 - val_binary_accuracy: 0.9651 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 13/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1338 - binary_accuracy: 0.9734 - val_loss: 0.1551 - val_binary_accuracy: 0.9641 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 14/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1263 - binary_accuracy: 0.9743 - val_loss: 0.1511 - val_binary_accuracy: 0.9634 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 15/30
+1628/1628 [==============================] - 82s 51ms/step - loss: 0.1206 - binary_accuracy: 0.9757 - val_loss: 0.1502 - val_binary_accuracy: 0.9618 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 16/30
+1628/1628 [==============================] - 84s 51ms/step - loss: 0.1141 - binary_accuracy: 0.9770 - val_loss: 0.1533 - val_binary_accuracy: 0.9615 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 17/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1103 - binary_accuracy: 0.9770 - val_loss: 0.1522 - val_binary_accuracy: 0.9619 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 18/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.1065 - binary_accuracy: 0.9782 - val_loss: 0.1530 - val_binary_accuracy: 0.9606 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 19/30
+1628/1628 [==============================] - 82s 51ms/step - loss: 0.1022 - binary_accuracy: 0.9789 - val_loss: 0.1568 - val_binary_accuracy: 0.9595 - lr: 1.0000e-04
+Learning rate:  0.0001
+Epoch 20/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.0988 - binary_accuracy: 0.9797 - val_loss: 0.1555 - val_binary_accuracy: 0.9611 - lr: 3.1623e-05
+Learning rate:  1e-05
+Epoch 21/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.0880 - binary_accuracy: 0.9835 - val_loss: 0.1532 - val_binary_accuracy: 0.9605 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 22/30
+1628/1628 [==============================] - 83s 51ms/step - loss: 0.0864 - binary_accuracy: 0.9839 - val_loss: 0.1549 - val_binary_accuracy: 0.9603 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 23/30
+1628/1628 [==============================] - 82s 51ms/step - loss: 0.0846 - binary_accuracy: 0.9843 - val_loss: 0.1564 - val_binary_accuracy: 0.9602 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 24/30
+1628/1628 [==============================] - 82s 50ms/step - loss: 0.0838 - binary_accuracy: 0.9848 - val_loss: 0.1600 - val_binary_accuracy: 0.9592 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 25/30
+1628/1628 [==============================] - 82s 51ms/step - loss: 0.0832 - binary_accuracy: 0.9845 - val_loss: 0.1596 - val_binary_accuracy: 0.9596 - lr: 3.1623e-06
+Learning rate:  1e-05
+Epoch 26/30
+1628/1628 [==============================] - 82s 51ms/step - loss: 0.0818 - binary_accuracy: 0.9848 - val_loss: 0.1618 - val_binary_accuracy: 0.9589 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 27/30
+1628/1628 [==============================] - 82s 50ms/step - loss: 0.0818 - binary_accuracy: 0.9846 - val_loss: 0.1635 - val_binary_accuracy: 0.9588 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 28/30
+1628/1628 [==============================] - 82s 50ms/step - loss: 0.0810 - binary_accuracy: 0.9847 - val_loss: 0.1645 - val_binary_accuracy: 0.9589 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 29/30
+1628/1628 [==============================] - 82s 50ms/step - loss: 0.0807 - binary_accuracy: 0.9846 - val_loss: 0.1641 - val_binary_accuracy: 0.9589 - lr: 1.0000e-05
+Learning rate:  1e-05
+Epoch 30/30
+1620/1628 [============================>.] - ETA: 0s - loss: 0.0798 - binary_accuracy: 0.9852  
