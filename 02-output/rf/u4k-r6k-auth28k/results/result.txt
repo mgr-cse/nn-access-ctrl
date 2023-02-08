@@ -1,0 +1,3 @@
+Test accuracy:0.879304
+TN: 10828, FP: 1270, FN: 1506, TP: 9396
+Train accuracy:0.981533

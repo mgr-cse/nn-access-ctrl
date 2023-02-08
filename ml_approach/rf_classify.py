@@ -148,7 +148,7 @@ from sklearn.metrics import confusion_matrix
 RESULT_PATH = './results'
 #os.makedirs(RESULT_PATH)
 
-result_file=open(RESULT_PATH + '/results.txt', 'w+')
+result_file=open(RESULT_PATH + '/result.txt', 'w+')
 y_preds = np.array(y_preds)
 print('True Positive/ Negative, False Positive/ Negative Information')
 for i in range(4):
