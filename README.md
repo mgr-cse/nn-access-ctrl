@@ -1,12 +1,7 @@
 # nn-access-ctrl
 
-`dataset/` directory contains all the datasets related to the DLBAC_alpha experiments.  
+Repository for Cloud commputing term paper, implements and extends the work of the paper by Nobi et. al. [1]
 
-`neural_network_training/` directory contains DLBAC_alpha neural network (ResNet) artifacts and source code.  
+[1] Mohammad Nur Nobi, Ram Krishnan, Yufei Huang, Mehrnoosh Shakarami, and Ravi Sandhu. 2022. Toward Deep Learning Based Access Control. In Proceedings of the Twelfth ACM Conference on Data and Application Security and Privacy (CODASPY '22). Association for Computing Machinery, New York, NY, USA, 143–154. https://doi.org/10.1145/3508398.3511497
 
-`decision_engine/` directory contains the source code of DLBAC decision engine.  
-
-`understanding_dlbac_alpha/` directory contains DLBAC_alpha decision understanding related artifacts and source code.  
-
-
-Further details and required libraries are available in respective directory.
+Forks and extends the work from https://github.com/dlbac/DlbacAlpha
