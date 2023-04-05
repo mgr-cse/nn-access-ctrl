@@ -1,0 +1,5 @@
+train data file name:../dataset/synthetic/u6k-r6k-auth32k/train_u6k-r6k-auth32k.sample
+test data file name:../dataset/synthetic/u6k-r6k-auth32k/test_u6k-r6k-auth32k.sample
+Test loss:0.268083
+Test accuracy:0.955191
+TN: 12328, FP: 582, FN: 585, TP: 12549

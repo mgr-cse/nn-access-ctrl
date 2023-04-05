@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-import keras
-from keras.layers import Dense, Conv2D, BatchNormalization, Activation
-from keras.layers import AveragePooling2D, Input, Flatten, GlobalAveragePooling2D
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler
-from keras.callbacks import ReduceLROnPlateau
-from keras.preprocessing.image import ImageDataGenerator
-from keras.regularizers import l2
-from keras import backend as K
-from keras.models import Model
+import tensorflow.keras as keras
+from tensorflow.keras.layers import Dense, Conv2D, BatchNormalization, Activation
+from tensorflow.keras.layers import AveragePooling2D, Input, Flatten, GlobalAveragePooling2D
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import ModelCheckpoint, LearningRateScheduler
+from tensorflow.keras.callbacks import ReduceLROnPlateau
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
 import numpy as np
 from numpy import loadtxt
 from tensorflow.keras.utils import to_categorical
@@ -26,7 +26,7 @@ param_count = len(sys.argv)
 trainDataFileName = str(sys.argv[1])
 testDataFileName = str(sys.argv[2])
 
-batch_size = 16  # trained all networks with batch_size=16
+batch_size = 128  # trained all networks with batch_size=16
 
 # format of the dataset
 # <uid rid> <8-13 user-metadata values> <8-13 resource-metadata values> <4 operations>
