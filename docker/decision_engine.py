@@ -155,13 +155,9 @@ def main():
         print('Output of the decision engine', decision)
 
     if decision[0, requested_ops]:
-        print('***********************************')
-        print('******** Access Granted! **********')
-        print('***********************************')
+        print('granted')
     else:
-        print('***********************************')
-        print('******** Access Denied! ***********')
-        print('***********************************')
+        print('denied')
 
 
 if __name__ == '__main__':
