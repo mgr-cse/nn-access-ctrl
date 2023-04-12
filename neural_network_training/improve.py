@@ -67,10 +67,13 @@ else:
 depth = n * 6 + 2
 
 # we need less epoch for the deeper network
+'''
 if depth > 8:
   epochs = 30
 else:
   epochs = 60
+'''
+epochs = 30
 
 # Model name, depth and version
 model_type = 'ResNet%d' % (depth)
