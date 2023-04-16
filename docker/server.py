@@ -74,6 +74,11 @@ def access_file():
 
 @app.route('/')
 def index():
-    return 'Web App with Python Flask!'
+    return '''
+    Welcome to the decision engine server of the DEEP learning based Access control framework
+    To access the API of this server,
+    1) clone the repsitory: https://github.com/mgr-cse/nn-access-ctrl
+    2) run the client python script docker/client.py
+    '''
 
 app.run(host='0.0.0.0', port=80)

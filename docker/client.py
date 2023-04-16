@@ -1,7 +1,7 @@
 import requests
 from typing import Dict
 
-SERVER_IP = '172.17.0.2'    # docker's default ip, can change
+SERVER_IP = 'mattievm.ddns.net'    # docker's default ip, can change
 
 def make_request(endpoint: str, params: Dict):
     try:

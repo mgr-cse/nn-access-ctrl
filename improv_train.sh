@@ -19,7 +19,7 @@ for d in $dataset_folders; do
     python improve.py ../dataset/synthetic/${d}/train_${d}.sample ../dataset/synthetic/${d}/test_${d}.sample
     echo ++++ train complete!: $d
     # copy results folder
-    mkdir -p ../02-output/improve/$d
-    cp -r results ../02-output/improve/$d/
-    echo ++++ results copied: $d
+    #mkdir -p ../02-output/improve/$d
+    #cp -r results ../02-output/improve/$d/
+    #echo ++++ results copied: $d
 done
